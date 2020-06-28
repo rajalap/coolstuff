@@ -1,5 +1,5 @@
 def main():
-    print("Hello World!")
+    print("Design Patterns")
 
 if __name__ == "__main__":
     main()
