@@ -6,6 +6,8 @@ import desPatt
 import rotMat
 import zeroMat
 import grphCalc
+import binSrchTree
+import loopDetect
 
 # Using a dictionary instead of a case statement since the practice is more 'Python-esque'
 switcher = {
@@ -16,7 +18,9 @@ switcher = {
     "DP"  :  desPatt,
     "RM"  :  rotMat,
     "ZM"  :  zeroMat,
-    "GC"  :  grphCalc
+    "GC"  :  grphCalc,
+    "BST" :  binSrchTree,
+    "LD"  :  loopDetect
 }
 
 def restart():
@@ -39,6 +43,8 @@ def main():
     print("6: Rotate Matrix - RM")
     print("7: Zeroed Matrix - ZM")
     print("8: Graphing Calculator - GC")
+    print("9: Binary Search Tree - BST")
+    print("10: Loop Detection - LD")
     userIn = input("What function would you like to test? ")
 
     if userIn in switcher.keys():
