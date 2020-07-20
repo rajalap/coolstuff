@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-def main():
-    print("Is Unique")
-
-if __name__ == "__main__":
-=======
 import os
 
 def main():
@@ -17,5 +11,4 @@ def main():
         print("String is a palindrome")
 
 if __name__=="main":
->>>>>>> Stashed changes
     main()
