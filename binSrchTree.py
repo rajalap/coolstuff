@@ -16,7 +16,7 @@ class Node:
         else:
             if self.right:
                 return self.right.insert(data)
-            else
+            else:
                 self.right = Node(data)
                 return True
 
@@ -32,7 +32,8 @@ class Tree:
             return True
     
     #TODO fill out print function
-    def print()
+    #def __repr__(self):
+
 
 def split_list(list):
     half = len(list)
@@ -45,9 +46,9 @@ def bst(arr, myBST):
         myBST.insert(arr[len(arr)/2])
         arr.remove(arr[len(arr)/2])
         arrLeft, arrRight = split_list(arr)
-        if arrLeft not None:
+        if arrLeft is not None:
              bst(arrLeft, myBST)
-        if arrRight not None:
+        if arrRight is not None:
              bst(arrRight, myBST)
 
 def main():
