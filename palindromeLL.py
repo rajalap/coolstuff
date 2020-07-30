@@ -16,14 +16,15 @@ def check4Pals(node, LL):
     if len(LL) == 2:
         if LL[0] == LL[1]:
             print("Pal of size 2")
-    for x, num in enumerate(LL):
-        print("hi ", x)
-        if x == len(LL)/2:
-            print("Found a buddy, pal!")
             return
-        if LL[x] != LL[len(LL)-1-x]:
+        else:
             print("Not a pal!")
-            return   
+            return
+    for i, elem in enumerate(LL):
+        if LL[i] != LL[len(LL)-1-i]:
+            print("Not a pal!")
+            return 
+    print("Found a buddy, pal!")
 
 def main():
     tHead        = Node("t")
@@ -58,6 +59,8 @@ def main():
     bNode3       = Node("d")
     bNode2.next   = bNode3
 
+    oHead        = Node("o")
+
     LL = []
     printLL(tHead)
     check4Pals(tHead, LL)
@@ -67,6 +70,10 @@ def main():
     LL = []
     printLL(bHead)
     check4Pals(bHead, LL)
+    LL = []
+    printLL(oHead)
+    check4Pals(oHead, LL)
+
 
 if __name__ == "__main__":
     main()
